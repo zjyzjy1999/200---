@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .f{
+            border-left: 1px solid ;
+            border-top: 1px solid ;
+            border-bottom: 1px solid;
+            border-image:linear-gradient(to right,blue ,white) 1 1 1 1 ;
+            border-right: none;
+            transform: skewX(-45deg);
+        }
+        .f>div{transform: skewX(45deg);}
+        button{
+            width: 100px;
+            height: 50px;
+            border-left: none;
+            border-right: 2px solid;
+            border-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+            border-image: -moz-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+            border-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+        transform: skewX(-45deg);
+        }
+        button:hover{
+            color: white;
+            background-color: blue;
+        }
+        .b>div{
+           transform: skewX(45deg);
+       }
+        /* button:first-child{
+           border-right: 2px solid;
+             border-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+            border-image: -moz-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+            border-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+           transform: skewX(-45deg);
+       }
+       button:last-of-type{
+        border-left: none;
+        border-right: 2px solid;
+            border-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+            border-image: -moz-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+            border-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,green 50%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+        transform: skewX(-45deg);
+       } */
+       
+    </style>
+</head>
+<body style="margin: 100px;">
+    <div class="f">
+        <div>
+            <button onclick="alert('1111')" class="b"><div>666</div></button><button class="b"><div>666</div></button><button class="b"><div>666</div></button>
+        </div>
+    </div>
+    <script>
+        
+        // var neon=document.getElementById("neon")
+        // neon.addEventListener("mouseenter",()=>{
+        //     neon.style.textShadow= '0 0 20px black'
+        // })
+        // neon.addEventListener("mouseleave",()=>{
+        //     neon.style.textShadow= '0 0 20px #ff005b'
+        // })
+        
+    </script>
+</body>
+</html>
